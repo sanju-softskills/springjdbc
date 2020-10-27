@@ -23,5 +23,10 @@ public class StudentDaoImpl implements StudentDao{
 		int result =this.template.update(query,inputs);
 		return result;
 	}
+	public int delete(int studentId) {
+		String query= "delete from student where id=?";
+		int result= this.template.update(query,studentId);
+		return result;
+	}
  
 }

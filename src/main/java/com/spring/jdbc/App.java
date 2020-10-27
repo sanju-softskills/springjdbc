@@ -23,7 +23,9 @@ public class App
         s.setId(11);
         s.setName("qwerty");
        // st.insert(s);
-       st.change(s);
+      // st.change(s);
+      int x= st.delete(11);
+      System.out.println(x);
        
     }
 }
