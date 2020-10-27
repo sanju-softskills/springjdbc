@@ -20,12 +20,13 @@ public class App
 		 */
         StudentDao st = context.getBean("studentDao",StudentDao.class);
         Student s = new Student();
-        s.setId(11);
-        s.setName("qwerty");
+//        s.setId(11);
+//        s.setName("qwerty");
        // st.insert(s);
       // st.change(s);
-      int x= st.delete(11);
-      System.out.println(x);
+     // int x= st.delete(11);
+       s= st.getstudent(111);
+      System.out.println(s);
        
     }
 }
